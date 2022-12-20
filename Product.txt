@@ -1,0 +1,29 @@
+SP01|Com chien trung|L01|30 30000
+SP02|Con chien rau cu|L01|23 35000
+SP03|Com chien ca man|L01|21 42000
+SP04|Com chien hai san|L01|5 42000
+SP05|Com chien ga xe|L01|28 42000
+SP06|Com canh ga chien|L02|20 45000
+SP07|Com ga xoi mo|L02|20 45000
+SP08|Com muc xao sa te|L02|20 45000
+SP09|Com bo nuong nam|L02|25 48000
+SP10|Rau cai thia luoc|L03|20 25000
+SP11|Hanh tay xao bo|L03|20 49000
+SP12|Salad rau cu|L04|20 42000
+SP13|Salad ca ngu|L04|20 45000
+SP14|Salad ga|L04|20 45000
+SP15|Salad dac biet|L04|20 48000
+SP16|Trung cut luoc|L05|20 15000
+SP17|Trung ga luoc|L05|20 15000
+SP18|Ca vien chien|L05|20 25000
+SP19|Ha cao chien|L05|20 29000
+SP20|Ha cao hap|L05|40 29000
+SP21|Khoai tay chien|L05|20 29000
+SP22|Dui ga chien gion|L05|20 35000
+SP23|Dui ga sot chua ngot|L05|20 35000
+SP24|Xuc xich chien|L05|20 39000
+SP25|Tom chien bot|L05|20 55000
+SP26|Cafe den|L06|20 12000
+SP27|Cafe sua|L06|20 15000
+SP28|Tra dao|L06|20 15000
+SP29|Coca|L06|20 15000

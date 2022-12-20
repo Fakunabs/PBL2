@@ -1,0 +1,6 @@
+L01|Com chien|
+L02|Com trang|
+L03|Rau xao|
+L04|Salad|
+L05|An vat|
+L06|Nuoc giai khat|
