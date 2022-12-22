@@ -1,10 +1,12 @@
-#pragma once // tránh đụng độ thư viện khi gọi chồng file lên nhau
+#ifndef MyLib_h
+#define MyLib_h
+
 #include <stdio.h>
 #include <conio.h>
-#include<ctime> /* thư viện hỗ trợ về thời gian thực */
+#include <ctime>	 /* thư viện hỗ trợ về thời gian thực */
 #include "windows.h" // thư viện này bá đạo lắm nhé - chứa nhiều đồ chơi nek - cứ tìm hiểu dần dần s
 //======= lấy tọa độ x của con trỏ hiện tại =============
-#define KEY_NONE	-1
+#define KEY_NONE -1
 int whereX()
 {
 	CONSOLE_SCREEN_BUFFER_INFO csbi;
@@ -24,7 +26,7 @@ int whereY()
 void gotoXY(short x, short y)
 {
 	HANDLE hConsoleOutput;
-	COORD Cursor_an_Pos = { x, y };
+	COORD Cursor_an_Pos = {x, y};
 	hConsoleOutput = GetStdHandle(STD_OUTPUT_HANDLE);
 	SetConsoleCursorPosition(hConsoleOutput, Cursor_an_Pos);
 }
@@ -44,11 +46,29 @@ void SetColor(WORD color)
 
 	SetConsoleTextAttribute(hConsoleOutput, wAttributes);
 }
+
+//============= đặt màu cho nền =========
+void SetBGColor(WORD color)
+{
+	HANDLE hConsoleOutput;
+	hConsoleOutput = GetStdHandle(STD_OUTPUT_HANDLE);
+
+	CONSOLE_SCREEN_BUFFER_INFO screen_buffer_info;
+	GetConsoleScreenBufferInfo(hConsoleOutput, &screen_buffer_info);
+
+	WORD wAttributes = screen_buffer_info.wAttributes;
+	color &= 0x000f;
+	color <<= 4;
+	wAttributes &= 0xff0f;
+	wAttributes |= color;
+
+	SetConsoleTextAttribute(hConsoleOutput, wAttributes);
+}
 //============== làm ẩn trỏ chuột ===========
 void ShowCur(bool CursorVisibility)
 {
 	HANDLE handle = GetStdHandle(STD_OUTPUT_HANDLE);
-	CONSOLE_CURSOR_INFO cursor = { 1, CursorVisibility };
+	CONSOLE_CURSOR_INFO cursor = {1, CursorVisibility};
 	SetConsoleCursorInfo(handle, &cursor);
 }
 //======= trả về mã phím người dùng bấm =========
@@ -73,3 +93,5 @@ int inputKey()
 
 	return KEY_NONE;
 }
+
+#endif // MyLib_h // tránh đụng độ thư viện khi gọi chồng file lên nhau

@@ -23,4 +23,3 @@ public:
 };
 
 #endif // Member_h
-

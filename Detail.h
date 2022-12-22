@@ -27,4 +27,3 @@ IDReceipt(IDReceipt),IDProduct(IDProduct),amount(amount),Price(Price){};
 };
 
 #endif // Detail_h
-

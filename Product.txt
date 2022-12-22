@@ -1,4 +1,4 @@
-SP01|Com chien trung|L01|30 30000
+SP01|Com chien trung|L01|25 30000
 SP02|Con chien rau cu|L01|23 35000
 SP03|Com chien ca man|L01|21 42000
 SP04|Com chien hai san|L01|5 42000
@@ -24,6 +24,6 @@ SP23|Dui ga sot chua ngot|L05|20 35000
 SP24|Xuc xich chien|L05|20 39000
 SP25|Tom chien bot|L05|20 55000
 SP26|Cafe den|L06|20 12000
-SP27|Cafe sua|L06|20 15000
+SP27|Cafe sua|L06|19 15000
 SP28|Tra dao|L06|20 15000
 SP29|Coca|L06|20 15000

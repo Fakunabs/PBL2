@@ -70,4 +70,3 @@ float Discount::Change(int point) const
 {
     return point*(this->getDiscountRate());
 }
-

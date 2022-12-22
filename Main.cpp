@@ -14,6 +14,48 @@
 
 using namespace std;
 
+void setspace(int n)
+{
+    while (n--)
+        cout << " " ;
+}
+
+void Intro_start()
+{
+    SetColor(2);
+    int n=80;
+    setspace(n - 5);
+    for (int i = 0; i < 60; i++)
+        cout << char(196);
+    cout << endl;
+    setspace(5 + n);
+    cout << "Truong Dai hoc Bach Khoa - Dai hoc Da Nang" << endl;
+    setspace(14 + n);
+    cout << "Khoa Cong nghe thong tin" << endl;
+    setspace(24 + n);
+    cout << "*---*" << endl ;
+    setspace(11 + n);
+    cout << "PBL2: Du an co so lap trinh" << endl;
+    setspace(9 + n);
+    cout << "De tai:Quan ly cua hang thuc an nhanh\n\n\n" ;
+    setspace(n);
+    cout << "Sinh vien thuc hien:" ;
+    setspace(10);
+    cout << "Giang vien huong dan:\n" ;
+    setspace(n);
+    cout << "-Nguyen Xuan Thinh" ;
+    setspace(12);
+    cout << "-Le Thi My Hanh\n" ;
+    setspace(n);
+    cout << "-Tran Huu Tuan\n" ;
+    setspace(n - 5);
+    for (int i = 0; i < 60; i++)
+        cout << char(196);
+    SetColor(7);
+    getchar();
+    system("cls");
+}
+
 void GetData(LinkedList<Product> &P,LinkedList<Staff> &S,LinkedList<Member> &M,LinkedList<Bill> &B,LinkedList<Detail> &Dtl,LinkedList<Category> &C,Discount &D);
 void Menu(LinkedList<Product> &P,LinkedList<Staff> &S,LinkedList<Member> &M,LinkedList<Bill> &B,LinkedList<Detail> &Dtl,LinkedList<Category> &C,Discount &D);
 void QuanLyCuaHang(LinkedList<Product> &P,LinkedList<Staff> &S,LinkedList<Member> &M,LinkedList<Bill> &B,LinkedList<Detail> &Dtl,LinkedList<Category> &C,Discount &D);
@@ -27,6 +69,7 @@ void SaveData(const LinkedList<Product> &P,const LinkedList<Staff> &S,const Link
 
 int main()
 {
+    Intro_start();
     LinkedList<Product> P;
     LinkedList<Staff> S;
     LinkedList<Member> M;
@@ -53,7 +96,7 @@ void Menu(LinkedList<Product> &P,LinkedList<Staff> &S,LinkedList<Member> &M,Link
     do
     {
         system("cls");
-        choose=Menu(50,5,35,2,11,75,nd,n);
+        choose=Menu(80,5,35,2,11,75,nd,n);
         system("cls");
         switch(choose)
         {
@@ -79,15 +122,15 @@ void QuanLyCuaHang(LinkedList<Product> &P,LinkedList<Staff> &S,LinkedList<Member
     Category c;
     int choose,n=5;
     string nd[n];
-    nd[0]="Xem...";
-    nd[1]="Them...";
-    nd[2]="Cap nhat...";
-    nd[3]="Xoa...";
+    nd[0]="Chuc nang xem";
+    nd[1]="Chuc nang them";
+    nd[2]="Chuc nang cap nhat thong tin";
+    nd[3]="Chuc nang xoa";
     nd[4]="Thoat";
     do
     {
         system("cls");
-        choose=Menu(50,5,35,2,11,75,nd,n);
+        choose=Menu(80,5,35,2,11,75,nd,n);
         system("cls");
         switch(choose)
         {
@@ -126,7 +169,7 @@ void Xem(LinkedList<Product> &P,LinkedList<Staff> &S,LinkedList<Member> &M,Linke
     do
     {
         system("cls");
-        choose=Menu(50,5,35,2,11,75,nd,n);
+        choose=Menu(80,5,35,2,11,75,nd,n);
         switch(choose)
         {
         case 0:
@@ -195,7 +238,7 @@ void Them(LinkedList<Product> &P,LinkedList<Staff> &S,LinkedList<Member> &M,Link
     do
     {
         system("cls");
-        choose=Menu(50,5,35,2,11,75,nd,n);
+        choose=Menu(80,5,35,2,11,75,nd,n);
         switch(choose)
         {
         case 0:
@@ -239,7 +282,7 @@ void CapNhat(LinkedList<Product> &P,LinkedList<Staff> &S,LinkedList<Member> &M,L
     do
     {
         system("cls");
-        choose=Menu(50,5,35,2,11,75,nd,n);
+        choose=Menu(80,5,35,2,11,75,nd,n);
         switch(choose)
         {
         case 0:
@@ -294,7 +337,7 @@ void Xoa(LinkedList<Product> &P,LinkedList<Staff> &S,LinkedList<Member> &M,Linke
     do
     {
         system("cls");
-        choose=Menu(50,5,35,2,11,75,nd,n);
+        choose=Menu(80,5,35,2,11,75,nd,n);
         switch(choose)
         {
         case 0:
@@ -336,7 +379,7 @@ void ChucNangNhapXuatHoaDon(LinkedList<Product> &P,LinkedList<Staff> &S,LinkedLi
     do
     {
         system("cls");
-        choose=Menu(50,5,35,2,11,75,nd,2);
+        choose=Menu(80,5,35,2,11,75,nd,2);
         switch(choose)
         {
         case 0:
@@ -365,7 +408,7 @@ void ChucNangKhachHang(LinkedList<Product> &P,LinkedList<Staff> &S,LinkedList<Me
     do
     {
         system("cls");
-        choose=Menu(50,5,35,2,11,75,nd,n);
+        choose=Menu(80,5,35,2,11,75,nd,n);
         system("cls");
         switch(choose)
         {

@@ -1,4 +1,6 @@
-#pragma once
+#ifndef MyMenu_h
+#define MyMenu_h
+
 #include<bits/stdc++.h>
 #include <windows.h>
 #include "MyLib.h"
@@ -133,3 +135,6 @@ void MulBox(int x,int y,int w,int h,int t_color,int b_color,string nd[],int n)
         }
     }
 }
+
+
+#endif // MyMenu_h

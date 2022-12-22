@@ -103,4 +103,3 @@ void Member::printfNode() const
     cout << left << setw(10) << this->Point;
     cout << endl;
 }
-
